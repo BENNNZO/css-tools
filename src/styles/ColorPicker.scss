@@ -19,7 +19,7 @@
     border-bottom: 1px solid grey;
     .color {
         position: relative;
-        filter: drop-shadow(0 0 10px black);
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.5));
         .cursor {
             position: absolute;
             width: 25px;
@@ -28,8 +28,6 @@
             transform: translate(-50%, -50%);
             border: 2px solid white;
             pointer-events: none;
-            // transition: all 0.1s ease-out;
-            // transition: all 0.1s ease-out;
         }
         .gradient-1, .gradient-2 {
             position: absolute;
@@ -39,7 +37,11 @@
             height: 100%;
             pointer-events: none;
             border-radius: 10px;
-            border: 2px solid white;
+            overflow: hidden;
+            // box-shadow: 
+            //     inset -1px -1px #000,
+            //     inset 1px 1px #000;
+            // border: 2px solid white;
         }
         .gradient-2 {
             background-image: linear-gradient(to top, black, transparent);
@@ -54,7 +56,8 @@
             width: 100%;
             border-radius: 20px;
             pointer-events: none;
-            border: 2px solid white;
+            // border: 2px solid white;
+            filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.2));
         }
         .alpha-background {
             background-size: 100%;
@@ -68,22 +71,23 @@
             width: 25px;
             aspect-ratio: 1;
             border: 2px solid white;
+            filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.2));
             border-radius: 100%;
             pointer-events: none;
-            transform: translate(-50%, -50%);
+            transform: translate(-13px, -50%);
         }
     }
     .hue {
         position: relative;
         width: 15px;
-        filter: drop-shadow(0 0 10px black);
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.2));
         .hue-gradient {
             position: absolute;
             height: 100%;
             width: 15px;
             border-radius: 10px;
             pointer-events: none;
-            border: 2px solid white;
+            // border: 2px solid white;
             background-image: linear-gradient(to bottom, 
             hsl(0, 100%, 50%),
             hsl(30, 100%, 50%),
@@ -117,8 +121,9 @@
         height: 300px;
         width: 300px;
         border-radius: 10px;
-        border: 2px solid white;
+        // border: 2px solid white;
         overflow: hidden;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.5));
         .color-swatch, .color-swatch-background {
             position: absolute;
             width: 100%;

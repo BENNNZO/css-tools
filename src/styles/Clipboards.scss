@@ -1,9 +1,11 @@
 .wrapper-clipboards {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    // flex-direction: row;
+    grid-template-columns: 3fr 1fr 2fr;
     padding: 100px;
     justify-content: space-between;
+    gap: 5px;
     &::before {
         content: 'Clipboards';
         position: absolute;
