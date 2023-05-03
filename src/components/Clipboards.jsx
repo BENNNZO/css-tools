@@ -70,18 +70,22 @@ html {
 `
 
         },
+//         {
+//             title: 'Quick Git Push',
+//             clipped: false,
+//             text: `git add -A
+// git commit -am.
+// git push origin main
+// `
+//         },
         {
-            title: 'Quick Git Push',
+            title: 'Quick Git Push And Deploy',
             clipped: false,
-            text: `git add -A
-git commit -am.
+            text: `npm run build
+git add dist -Af
+git commit -am "Quick commit and deploy"
 git push origin main
-`
-        },
-        {
-            title: 'Quick Git Deploy',
-            clipped: false,
-            text: `git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages
 `
         }
     ])

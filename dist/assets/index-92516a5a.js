@@ -93,8 +93,9 @@ html {
     border-radius: 20px;
     border: 5px solid rgb(40, 40, 40);
 }
-`},{title:"Quick Git Push",clipped:!1,text:`git add -A
-git commit -am.
+`},{title:"Quick Git Push And Deploy",clipped:!1,text:`npm run build
+git add dist -Af
+git commit -am "Quick commit and deploy"
 git push origin main
-`},{title:"Quick Git Deploy",clipped:!1,text:`git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages
 `}]);function t(r){n(l=>{let o=[...l];return o[r].clipped=!0,o}),console.log(e),setTimeout(()=>{console.log(e),n(l=>{let o=[...l];return o[r].clipped=!1,o}),console.log(e)},1500),navigator.clipboard.writeText(e[r].text)}return I.jsx("section",{className:"wrapper-clipboards",children:e.map((r,l)=>I.jsxs("div",{className:"clipboard",children:[I.jsxs("div",{className:"header",children:[I.jsx("h2",{children:r.title}),I.jsx("img",{src:`${r.clipped?Id:Od}`,alt:"copy snipped of code",onClick:()=>t(l)})]}),I.jsx("div",{className:"pre",children:I.jsx("pre",{children:r.text})})]}))})}function jd(){return I.jsxs("div",{children:[I.jsx(Md,{}),I.jsx(Dd,{})]})}Kl.createRoot(document.getElementById("root")).render(I.jsx(wc.StrictMode,{children:I.jsx(jd,{})}));
