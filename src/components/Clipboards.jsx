@@ -47,12 +47,12 @@ html {
             text: `git add -A
 git commit -am.
 git push origin main
- `
+`
         },
         {
             title: 'Quick Git Deploy',
             text: `git subtree push --prefix dist origin gh-pages
- `
+`
         }
     ]
 
