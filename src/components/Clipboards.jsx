@@ -101,7 +101,7 @@ git push origin main
                 return newArr
             })
             console.log(clipboards)
-        }, 3000)
+        }, 1500)
         navigator.clipboard.writeText(clipboards[i].text)
     }
 
