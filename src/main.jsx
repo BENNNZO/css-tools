@@ -4,7 +4,13 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <App />
-  // </React.StrictMode>
+  </React.StrictMode>
 )
+
+// git subtree push --prefix dist origin gh-pages
+
+// git add -A
+// git commit -a
+// git push origin main
