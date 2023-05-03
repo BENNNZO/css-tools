@@ -1,0 +1,57 @@
+.wrapper-clipboards {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    justify-content: space-between;
+    &::before {
+        content: 'Clipboards';
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        transform: translateY(-50%);
+        font-family: 'Inter', sans-serif;
+        color: rgb(125, 125, 125);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .clipboard {
+        padding: 20px;
+        background-color: rgb(50, 50, 50);
+        border-radius: 10px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.2));
+        color: rgb(125, 125, 125);
+        overflow: hidden;
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            h2 {
+                color: rgb(220, 220, 220);
+            }
+            img {
+                height: 40px;
+                background-color: rgb(200, 200, 200, 0.2);
+                padding: 5px;
+                border-radius: 10px;
+                aspect-ratio: 1;
+                cursor: pointer;
+                filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.5));
+            }
+        }
+        .pre {
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgb(40, 40, 40);
+            margin-top: 20px;
+            pre {
+                height: 400px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 10px;
+            }
+        }
+    }
+}

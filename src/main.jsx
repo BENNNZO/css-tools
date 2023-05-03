@@ -8,9 +8,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 )
-
-// git subtree push --prefix dist origin gh-pages
-
-// git add -A
-// git commit -a
-// git push origin main
